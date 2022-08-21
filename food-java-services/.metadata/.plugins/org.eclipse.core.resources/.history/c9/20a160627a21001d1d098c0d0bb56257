@@ -1,0 +1,28 @@
+package com.foodservice.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.foodservice.model.Product;
+import com.foodservice.repository.ProductRepository;
+
+@Service
+public class ProductServiceImpl implements ProductService {
+
+	@Autowired
+	private ProductRepository productRepo;
+	
+	@Override
+	public List<Product> findAll() {
+		return this.productRepo.findAll();
+	}
+
+	@Override
+	public Product save(Product product) {
+		// TODO Auto-generated method stub
+		return this.productRepo.save(product);
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.foodservice.login;
+
+public class LoginDetails {
+
+}

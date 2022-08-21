@@ -1,0 +1,17 @@
+package com.foodservice.login;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+import lombok.NoArgsConstructor;
+
+@Entity
+@NoArgsConstructor
+public class LoginDetails {
+
+	@Id
+	private String userId;
+	private String password;
+	
+	private Roles role ;
+}

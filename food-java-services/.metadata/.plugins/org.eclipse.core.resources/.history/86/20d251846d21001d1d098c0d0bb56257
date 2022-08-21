@@ -1,0 +1,8 @@
+package com.foodservice.login;
+
+public class Roles {
+
+	private String user;
+	
+	private String admin;
+}
